@@ -82967,7 +82967,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4a8bb099527b0f2479990d6b298fa909,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4a8bb099527b0f2479990d6b298fa909,
         type: 3}
@@ -108006,6 +108006,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4a8bb099527b0f2479990d6b298fa909,
         type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a8bb099527b0f2479990d6b298fa909,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -123931,6 +123936,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: loc 3 vertex color (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a8bb099527b0f2479990d6b298fa909,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4a8bb099527b0f2479990d6b298fa909,
         type: 3}
