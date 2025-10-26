@@ -1,0 +1,9 @@
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+/Assets/Lapak[[:space:]]1-20250817T135659Z-1-001/Lapak[[:space:]]1/medieval-food-stall.zip filter=lfs diff=lfs merge=lfs -text
+/Assets/Pohon[[:space:]]Kelapa/coconut/source/lotus[[:space:]](Nelumbo[[:space:]]nucifera)[[:space:]]641_12.zip filter=lfs diff=lfs merge=lfs -text
+/Assets/Pohon[[:space:]]Kelapa/coconut/source/lotus[[:space:]](Nelumbo[[:space:]]nucifera)[[:space:]]641_12/gourd/gourd.obj filter=lfs diff=lfs merge=lfs -text
+/Assets/bukit[[:space:]]di[[:space:]]pantai/grey-rocks-clear-hill-point/source/model/model.obj filter=lfs diff=lfs merge=lfs -text
+/Assets/rumah[[:space:]]v3/grey-rocks-clear-hill-point/source/model/model.obj filter=lfs diff=lfs merge=lfs -text
+/Assets/yessir/batu[[:space:]]besar/Materials/material[[:space:]]2/LeeuwinCplx_SugarLoafCoastalExposure_OBJ.obj filter=lfs diff=lfs merge=lfs -text
+/Assets/Scenes/MainScene/OcclusionCullingData.asset filter=lfs diff=lfs merge=lfs -text

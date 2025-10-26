@@ -1,0 +1,11 @@
+Model Information:
+* title:	Indonesian Farmer Pak Tani
+* source:	https://sketchfab.com/3d-models/indonesian-farmer-pak-tani-7ec85a4aa0bf4e9f8e8a261b370c786e
+* author:	rofi.abdur (https://sketchfab.com/rofi.abdur)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Indonesian Farmer Pak Tani" (https://sketchfab.com/3d-models/indonesian-farmer-pak-tani-7ec85a4aa0bf4e9f8e8a261b370c786e) by rofi.abdur (https://sketchfab.com/rofi.abdur) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

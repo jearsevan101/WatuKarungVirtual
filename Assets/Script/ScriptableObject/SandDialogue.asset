@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d4880b0cfa9ba742a9c01ff37c7d482, type: 3}
+  m_Name: SandDialogue
+  m_EditorClassIdentifier: 
+  npcImage: {fileID: 21300000, guid: 331fbfcab6dbe2042b7abd93e5fa09a7, type: 3}
+  npcName: Pak Rusdi
+  dialogueEntries:
+  - dialogueLine: Halo apakah anda ingin merasakan pasir emas?
+    audioLine: {fileID: 8300000, guid: f8eeb8c9bfb5a8e47aa3d7ab859a06af, type: 3}
+    timer: 0
+    responses:
+    - responseText: Boleh Pak Rusdi!
+      nextDialogueIndex: 1
+  - dialogueLine: Ikuti instruksi ini, agar anda dapat merasakan bagaimana sentuhan
+      emas pasir
+    audioLine: {fileID: 8300000, guid: 5157c70c18002e84287b1af4b519a919, type: 3}
+    timer: 0
+    responses:
+    - responseText: Oke
+      nextDialogueIndex: 2
+  - dialogueLine: Silakan tekan telapak kaki Anda ke bawah, seolah-olah Anda sedang
+      membenamkan kaki lebih dalam ke pasir.
+    audioLine: {fileID: 0}
+    timer: 30
+    responses:
+    - responseText: Oke
+      nextDialogueIndex: 3
+  - dialogueLine: Bebaskan kaki anda dari timbunan pasir emas
+    audioLine: {fileID: 8300000, guid: 123568dfe064c4947b9fd83cd90e8bb2, type: 3}
+    timer: 30
+    responses:
+    - responseText: Oke
+      nextDialogueIndex: 4
+  - dialogueLine: Silakan geser perlahan bagian samping luar (atau dalam) kaki Anda,
+      seolah-olah Anda sedang membuat galian kecil di pasir.
+    audioLine: {fileID: 0}
+    timer: 30
+    responses:
+    - responseText: Oke
+      nextDialogueIndex: 5
+  - dialogueLine: Bebaskan kaki anda dari timbunan pasir emas
+    audioLine: {fileID: 8300000, guid: 123568dfe064c4947b9fd83cd90e8bb2, type: 3}
+    timer: 30
+    responses:
+    - responseText: Oke
+      nextDialogueIndex: 6
+  - dialogueLine: Sekarang, rasakan baik-baik butiran pasir yang menyentuh seluruh
+      bagian kaki Anda. Gosokkan sedikit telapak kaki Anda pada pasir.
+    audioLine: {fileID: 0}
+    timer: 30
+    responses:
+    - responseText: Oke
+      nextDialogueIndex: 7
+  - dialogueLine: Bebaskan kaki anda dari timbunan pasir emas
+    audioLine: {fileID: 8300000, guid: 123568dfe064c4947b9fd83cd90e8bb2, type: 3}
+    timer: 30
+    responses:
+    - responseText: Oke
+      nextDialogueIndex: 8
+  - dialogueLine: 'Selamat anda berhasil menyelesaikan misi ini '
+    audioLine: {fileID: 8300000, guid: 66c37dc643bb7d74bbcdf0092cd7b871, type: 3}
+    timer: 0
+    responses:
+    - responseText: Oke
+      nextDialogueIndex: 0
