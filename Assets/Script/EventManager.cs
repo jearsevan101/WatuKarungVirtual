@@ -25,9 +25,19 @@ public static class EventManager
     public static event Action OnClampObtained;
     public static event Action<currentActiveMinigame> OnActiveMinigame;
     public static event Action<currentActiveMinigame> OnMinigameEnded;
+    public static event Action<float> OnStartCountDown;
+    public static event Action<bool> OnHideCountdown;
 
     // --- Invokers ---
 
+    public static void VisibilityCountDown(bool isVisible)
+    {
+        OnHideCountdown?.Invoke(isVisible);
+    }
+    public static void StartCountDown(float count)
+    {
+        OnStartCountDown?.Invoke(count);
+    }
     public static void MinigameEnded(currentActiveMinigame currentMinigame)
     {
         OnMinigameEnded?.Invoke(currentMinigame);

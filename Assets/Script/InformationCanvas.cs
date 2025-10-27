@@ -60,6 +60,6 @@ public class InformationCanvas : MonoBehaviour
 
     private void UpdateItemObtained(int count)
     {
-        itemObtained.text = count.ToString()+"/10";
+        itemObtained.text = count.ToString()+"/15";
     }
 }

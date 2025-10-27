@@ -147,9 +147,8 @@ public class KerangMinigameManager : MonoBehaviour
         currentClampScore = 0;
         hasTriggered = false;
         informationCanvas.HideUI();
-
-        instructionManager.StartInstruction("Permainan kerangnya sudah selesai, silahkan lanjutkan perjalanan", "Oke");
         EventManager.MinigameEnded(currentActiveMinigame.clamp);
+        instructionManager.StartInstruction("Permainan kerangnya sudah selesai, silahkan lanjutkan perjalanan", "Oke");
     }
     private IEnumerator SetCountDownFacingPlayerNextFrame()
     {
@@ -185,6 +184,8 @@ public class KerangMinigameManager : MonoBehaviour
     private void HandleInstrucionResponse(bool response)
     {
         EventManager.OnInstructionResponsesClicked -= HandleInstrucionResponse;
+        EventManager.MinigameEnded(currentActiveMinigame.clamp);
+        instructionManager.StartInstruction("Permainan kerangnya sudah selesai, silahkan lanjutkan perjalanan", "Oke");
     }
 
     private void FaceCanvasToPlayer()

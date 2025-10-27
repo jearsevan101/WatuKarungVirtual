@@ -5,7 +5,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class ClampItem : MonoBehaviour
 {
-    [SerializeField] private CountDownObtainItem countDownUI;
+/*    [SerializeField] private CountDownObtainItem countDownUI;*/
     [SerializeField] private float timeCountDown;
     [SerializeField] private List<GameObject> prefabClamp;
     [SerializeField] private GameObject prefabParent;
@@ -24,7 +24,7 @@ public class ClampItem : MonoBehaviour
 
     private void Start()
     {
-        countDownUI.gameObject.SetActive(false);
+        /*countDownUI.gameObject.SetActive(false);*/
         SpawnClamp(); // spawn once at start
     }
     public void SpawnClamp()
@@ -81,28 +81,21 @@ public class ClampItem : MonoBehaviour
             StopAllCoroutines();
             isCountingDown = false;
 
-            // Stop UI and vibration
-            if (countDownUI != null)
-                countDownUI.gameObject.SetActive(false);
+            EventManager.VisibilityCountDown(false);
 
             EventManager.OnCountDownObtainedEnded -= HandleCountDownEnded;
         }
     }
     public void StartCountDown(IXRSelectInteractor interactor)
     {
-        if (countDownUI == null)
-        {
-            Debug.LogWarning("CountDownUI is not assigned!");
-            return;
-        }
 
-        countDownUI.gameObject.SetActive(true);
+        /*countDownUI.gameObject.SetActive(true);
         Vector3 uiPosition = playerTransform.position + playerTransform.forward * 1.0f + Vector3.up * 0.2f;
-        countDownUI.transform.position = uiPosition;
+        countDownUI.transform.position = uiPosition;*/
 
-        StartCoroutine(SetCountDownFacingPlayerNextFrame());
-        countDownUI.StartCountDown(timeCountDown);
-
+        /*StartCoroutine(SetCountDownFacingPlayerNextFrame());*/
+        /*countDownUI.StartCountDown(timeCountDown);*/
+        EventManager.StartCountDown(timeCountDown);
         EventManager.OnCountDownObtainedEnded += HandleCountDownEnded;
 
         // Start countdown and haptic feedback coroutines
@@ -155,7 +148,7 @@ public class ClampItem : MonoBehaviour
             Debug.LogWarning("CountDownUI is not assigned!");
         }
     }*/
-    private IEnumerator SetCountDownFacingPlayerNextFrame()
+    /*private IEnumerator SetCountDownFacingPlayerNextFrame()
     {
         yield return null; // wait 1 frame
         FaceCountDownUIToPlayer();
@@ -174,7 +167,7 @@ public class ClampItem : MonoBehaviour
             // Optional: rotate 180° if the forward is inverted
             countDownUI.transform.Rotate(0f, 180f, 0f);
         }
-    }
+    }*/
 
     private void HandleCountDownEnded()
     {
@@ -194,10 +187,12 @@ public class ClampItem : MonoBehaviour
             Debug.Log("Spawned prefab destroyed after countdown ended!");
         }
         // Hide countdown UI
-        if (countDownUI != null)
+/*        if (countDownUI != null)
         {
             countDownUI.gameObject.SetActive(false);
-        }
+        }*/
+
+        EventManager.VisibilityCountDown(false);
 
         if (hapticCoroutine != null)
             StopCoroutine(hapticCoroutine);
