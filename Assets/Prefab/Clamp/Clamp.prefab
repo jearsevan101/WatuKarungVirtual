@@ -47,11 +47,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countDownUI: {fileID: 5955624824192525347}
-  timeCountDown: 3
+  timeCountDown: 10
   prefabClamp:
-  - {fileID: 7456861538296161010, guid: 1fde2d4cb2f29c14d8ecc929619133dd, type: 3}
   - {fileID: 3449729693228609279, guid: 67a47d1c67ac6d841976c9439f695e19, type: 3}
-  - {fileID: 5763977812952832499, guid: 5e1de342962ceaf43bfdaf7a22fb7387, type: 3}
   - {fileID: 3158662794421268893, guid: 057cd38e2b245444b9ce332a78bdd282, type: 3}
   - {fileID: 3656777770847482169, guid: 1b711ad200c05014e8587b893a2ac741, type: 3}
   prefabParent: {fileID: 3196960640544690813}

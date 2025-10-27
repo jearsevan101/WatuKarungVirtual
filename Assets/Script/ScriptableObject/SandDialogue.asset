@@ -30,43 +30,73 @@ MonoBehaviour:
       nextDialogueIndex: 2
   - dialogueLine: Silakan tekan telapak kaki Anda ke bawah, seolah-olah Anda sedang
       membenamkan kaki lebih dalam ke pasir.
-    audioLine: {fileID: 0}
-    timer: 30
+    audioLine: {fileID: 8300000, guid: 17ea105992078b74eaf699b70952a972, type: 3}
+    timer: 28
     responses:
     - responseText: Oke
       nextDialogueIndex: 3
-  - dialogueLine: Bebaskan kaki anda dari timbunan pasir emas
-    audioLine: {fileID: 8300000, guid: 123568dfe064c4947b9fd83cd90e8bb2, type: 3}
-    timer: 30
+  - dialogueLine: Jeda
+    audioLine: {fileID: 0}
+    timer: 27
     responses:
     - responseText: Oke
       nextDialogueIndex: 4
-  - dialogueLine: Silakan geser perlahan bagian samping luar (atau dalam) kaki Anda,
-      seolah-olah Anda sedang membuat galian kecil di pasir.
-    audioLine: {fileID: 0}
-    timer: 30
+  - dialogueLine: Silahkan gerakan jari kaki anda ke atas dan ke bawah
+    audioLine: {fileID: 8300000, guid: 43315f045288d714fbc14f04f6a8e7b7, type: 3}
+    timer: 28
     responses:
     - responseText: Oke
       nextDialogueIndex: 5
-  - dialogueLine: Bebaskan kaki anda dari timbunan pasir emas
-    audioLine: {fileID: 8300000, guid: 123568dfe064c4947b9fd83cd90e8bb2, type: 3}
-    timer: 30
+  - dialogueLine: Jeda
+    audioLine: {fileID: 0}
+    timer: 27
     responses:
     - responseText: Oke
       nextDialogueIndex: 6
-  - dialogueLine: Sekarang, rasakan baik-baik butiran pasir yang menyentuh seluruh
-      bagian kaki Anda. Gosokkan sedikit telapak kaki Anda pada pasir.
-    audioLine: {fileID: 0}
+  - dialogueLine: Silahkan gerakan tumit kaki anda ke kiri dan ke kanan
+    audioLine: {fileID: 8300000, guid: e300b764924537b4a961f0aa275614fd, type: 3}
     timer: 30
     responses:
     - responseText: Oke
       nextDialogueIndex: 7
-  - dialogueLine: Bebaskan kaki anda dari timbunan pasir emas
-    audioLine: {fileID: 8300000, guid: 123568dfe064c4947b9fd83cd90e8bb2, type: 3}
-    timer: 30
+  - dialogueLine: Jeda
+    audioLine: {fileID: 0}
+    timer: 27
     responses:
     - responseText: Oke
       nextDialogueIndex: 8
+  - dialogueLine: Silakan geser perlahan bagian samping luar (atau dalam) kaki Anda,
+      seolah-olah Anda sedang membuat galian kecil di pasir.
+    audioLine: {fileID: 8300000, guid: e5c5534a14f96df4a8e92ca3d44c8c9e, type: 3}
+    timer: 30
+    responses:
+    - responseText: Oke
+      nextDialogueIndex: 9
+  - dialogueLine: Jeda
+    audioLine: {fileID: 0}
+    timer: 27
+    responses:
+    - responseText: Oke
+      nextDialogueIndex: 10
+  - dialogueLine: Sekarang, rasakan baik-baik butiran pasir yang menyentuh seluruh
+      bagian kaki Anda. Gosokkan sedikit telapak kaki Anda pada pasir.
+    audioLine: {fileID: 8300000, guid: bf224914316f4504c80e8ceb718a19a4, type: 3}
+    timer: 28
+    responses:
+    - responseText: Oke
+      nextDialogueIndex: 11
+  - dialogueLine: Jeda
+    audioLine: {fileID: 0}
+    timer: 27
+    responses:
+    - responseText: Oke
+      nextDialogueIndex: 12
+  - dialogueLine: Bebaskan kaki anda dari timbunan pasir emas
+    audioLine: {fileID: 8300000, guid: 123568dfe064c4947b9fd83cd90e8bb2, type: 3}
+    timer: 28
+    responses:
+    - responseText: Oke
+      nextDialogueIndex: 13
   - dialogueLine: 'Selamat anda berhasil menyelesaikan misi ini '
     audioLine: {fileID: 8300000, guid: 66c37dc643bb7d74bbcdf0092cd7b871, type: 3}
     timer: 0

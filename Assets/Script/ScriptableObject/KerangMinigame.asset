@@ -15,14 +15,14 @@ MonoBehaviour:
   npcImage: {fileID: 21300000, guid: d9063fc42a6d2c6479a9362c57802fe2, type: 3}
   npcName: Syifa
   dialogueEntries:
-  - dialogueLine: Kak tolong bantu cariin 10 kerang dong
-    audioLine: {fileID: 8300000, guid: 04ab75ba21efe8b4686854901095ea2f, type: 3}
+  - dialogueLine: Kak tolong bantu cariin 15 kerang dong
+    audioLine: {fileID: 8300000, guid: 9891d7978a421ee4f9f051733c5863ff, type: 3}
     timer: 0
     responses:
     - responseText: Oke sebentar ya
       nextDialogueIndex: 1
   - dialogueLine: Makasih Kak
-    audioLine: {fileID: 8300000, guid: b570f4ba4dbfc9445a131caa37299f6f, type: 3}
+    audioLine: {fileID: 8300000, guid: 35f7bf394c310d44db12ebd348cf4b17, type: 3}
     timer: 0
     responses:
     - responseText: Iya
