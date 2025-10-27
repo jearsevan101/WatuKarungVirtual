@@ -49,7 +49,7 @@ public class MainMenuManager : MonoBehaviour
     private void HandleGameStart()
     {
         LockPlayerMovement(false);
-        instructionManager.StartInstruction("Selamat datang! Nikmati 3 menit pertama ini untuk menjelajahi keindahan Pantai Watu Karung virtual secara bebas. Gunakan waktu ini sebaik-baiknya!", "Oke");
+        instructionManager.StartInstruction("Selamat datang! Nikmati 5 menit pertama ini untuk menjelajahi keindahan Pantai Watu Karung virtual secara bebas. Gunakan waktu ini sebaik-baiknya!", "Oke");
 
         EventManager.OnInstructionResponsesClicked += HandleInstructionResponse;
     }
