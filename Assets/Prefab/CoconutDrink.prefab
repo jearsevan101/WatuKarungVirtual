@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countDownUI: {fileID: 8513808222674920678}
-  timeCountDown: 30
+  timeCountDown: 60
 --- !u!1001 &5169921717230523533
 PrefabInstance:
   m_ObjectHideFlags: 0

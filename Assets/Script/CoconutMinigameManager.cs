@@ -20,7 +20,7 @@ public class CoconutMinigameManager : MonoBehaviour
     [SerializeField] private GameObject sitWheelChairPosition;
     [SerializeField] private int drinkAttempAmount;
     [SerializeField] private InformationCanvas informationCanvas;
-    [SerializeField] private float restingTime=30f;
+    [SerializeField] private float restingTime=60f;
     [SerializeField] private DirectionInfoManager directionInfo;
     [SerializeField] private GameObject floatingObject;
 
@@ -233,6 +233,7 @@ public class CoconutMinigameManager : MonoBehaviour
         SpawnCoconutInThePlayer();
 
         instructionManager.StartInstruction("Silahkan menuju gubuk untuk minum kelapa", "Oke");
+        directionInfo.CreateRoute(sitPoint.position);
     }
     private void SpawnCoconutInThePlayer()
     {
