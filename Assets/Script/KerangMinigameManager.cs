@@ -129,7 +129,8 @@ public class KerangMinigameManager : MonoBehaviour
 
         if (currentClampScore >= requiredClampObtained)
         {
-            FinishGame();
+            instructionManager.StartInstruction("Semua Kerang Didapatkan!", "Oke");
+            informationCanvas.HideUI();
         }
     }
     private void FinishGame()
@@ -143,10 +144,8 @@ public class KerangMinigameManager : MonoBehaviour
         EventManager.StopCountDown();
         countDownUI.gameObject.SetActive(false);
         // You can show instruction, UI, or trigger next quest here
-        instructionManager.StartInstruction("Semua Kerang Didapatkan!", "Oke");
         currentClampScore = 0;
         hasTriggered = false;
-        informationCanvas.HideUI();
         EventManager.MinigameEnded(currentActiveMinigame.clamp);
         instructionManager.StartInstruction("Permainan kerangnya sudah selesai, silahkan lanjutkan perjalanan", "Oke");
     }
@@ -172,21 +171,13 @@ public class KerangMinigameManager : MonoBehaviour
     }
     private void HandleCountDownEnded()
     {
-        currentClampScore = 0;
-        countDownUI.gameObject.SetActive(false);
-        hasTriggered = false;
         EventManager.OnCountdownEnded -= HandleCountDownEnded;
         instructionManager.StartInstruction("Waktu Habis", "Oke");
         informationCanvas.HideUI();
-        EventManager.OnInstructionResponsesClicked += HandleInstrucionResponse;
+        FinishGame();
     }
 
-    private void HandleInstrucionResponse(bool response)
-    {
-        EventManager.OnInstructionResponsesClicked -= HandleInstrucionResponse;
-        EventManager.MinigameEnded(currentActiveMinigame.clamp);
-        instructionManager.StartInstruction("Permainan kerangnya sudah selesai, silahkan lanjutkan perjalanan", "Oke");
-    }
+
 
     private void FaceCanvasToPlayer()
     {

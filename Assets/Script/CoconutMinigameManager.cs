@@ -23,6 +23,8 @@ public class CoconutMinigameManager : MonoBehaviour
     [SerializeField] private float restingTime=60f;
     [SerializeField] private DirectionInfoManager directionInfo;
     [SerializeField] private GameObject floatingObject;
+    [SerializeField] private Transform sitDirection;
+
 
     private bool hasTriggered = false;
     private bool hasCoconut = false;
@@ -232,8 +234,9 @@ public class CoconutMinigameManager : MonoBehaviour
         // Spawn the coconut when conversation ends
         SpawnCoconutInThePlayer();
 
+        directionInfo.CreateRoute(sitDirection.position);
+
         instructionManager.StartInstruction("Silahkan menuju gubuk untuk minum kelapa", "Oke");
-        directionInfo.CreateRoute(sitPoint.position);
     }
     private void SpawnCoconutInThePlayer()
     {
